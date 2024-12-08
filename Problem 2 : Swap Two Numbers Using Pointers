@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,temp,*ptra, *ptrb;
+    printf("a= ");
+    scanf("%d", &a);
+    printf("b= ");
+    scanf("%d", &b);
+    ptra = &a;
+    ptrb = &b;
+    temp = *ptra;
+    *ptra = *ptrb;
+    *ptrb = temp;
+    printf("\nSwapped:\na = %d\nb = %d\n", a, b);
+    return 0;
+}    
