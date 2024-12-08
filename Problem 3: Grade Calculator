@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    if(n<=0)
+    {
+
+        printf("F");
+        return 0;
+    }
+    switch(n/10)
+    {
+    case 1:
+        printf("F");
+        break;
+    case 2:
+        printf("F");
+        break;
+    case 3:
+        printf("F");
+        break;
+    case 4:
+        printf("D");
+        break;
+    case 5:
+        printf("C");
+        break;
+    case 6:
+        printf("B");
+        break;
+    default:
+        printf("A");
+        return 0;
+    }
+}
